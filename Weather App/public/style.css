@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(37, 107, 132);
+    margin:-40px 0px;
+    padding: 0;
+}
+span{
+    color: rgb(105, 192, 224);
+}
+header{
+    background-color: aliceblue;
+    height: 100px;
+}
+
+header h1{
+    color:rgba(208, 211, 24, 0.792);
+    text-align: center;
+    font-size: 60px;
+}
+
+
+.meteo{
+    background-image: url("https://images.stockcake.com/public/0/f/a/0fab6b34-9079-4a2d-82d0-48982bce4753_large/sunset-cloud-formation-stockcake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 400px;
+    width: 600px;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+}
+
+.meteo::after{
+    height: 400px;
+    width: 600px;
+    content: "";
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.meteo h2{
+    text-align: center;
+    font-size: 40px;
+    z-index: 2;
+    color: rgb(200, 231, 241);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.temperature{
+    color: rgb(200, 231, 241);
+    font-size: 70px;
+    z-index: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ville{
+    color: rgb(200, 231, 241);
+    z-index: 2;
+    font-size: 40px;
+    margin-top: -25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.meteo h3{
+    z-index: 2;
+    color: rgb(200, 231, 241);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    text-align: center;
+}
+form input{
+    border-radius: 10px;
+}

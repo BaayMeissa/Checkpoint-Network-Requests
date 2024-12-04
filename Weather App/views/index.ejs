@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <h1>Sen<span>Météo</h1>
+    </header>
+    <form action="/" method="get">
+        <label for="city">Rechercher une ville</label>
+        <input placeholder="Recherche une ville" type="text" id="city" name="city" required>
+        <button type="submit">Rechercher</button>
+    </form>
+    <div class="meteo">
+        <h3>Location</h3>
+        <h1 class="ville"><%= city %></h1>
+        <h1 class="temperature"><%= temp %></h1>
+        <h2 class="description"><%= description %></h2>
+    </div>
+</body>
+</html>
